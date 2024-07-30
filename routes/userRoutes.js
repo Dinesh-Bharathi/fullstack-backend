@@ -2,7 +2,7 @@
 const express = require("express");
 const router = express.Router();
 const userController = require("../controllers/userController");
-const authMiddleware = require("../middleware/authmiddleware");
+const authMiddleware = require("../middleware/authMiddleware");
 
 // Get user details
 router.get("/:id", authMiddleware, userController.getUserDetails);
